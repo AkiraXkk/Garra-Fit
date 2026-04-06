@@ -1,4 +1,4 @@
-<h1 align="center">PH Suplementos </h1>
+<h1 align="center">GARRA Fit </h1>
 
 <div align="center">
   <p style="margin-bottom: 0">•
@@ -24,16 +24,14 @@
 <details>
   <summary markdown="span"><strong>&#x1F1FA;&#x1F1F8; English</strong></summary><br />
   <div id="description" align="justify">
-    <p><strong>Ph Supplements, the exclusive online platform for entrepreneurs in the nutritional supplement industry, is designed to meet the specific demands of those who market products consumed by fitness enthusiasts.</strong><br>
-      <a href="https://ph-suplementos.vercel.app/" target="_blank"><strong>Click here</strong></a> to check out the final version of the project on your browser</p>
+    <p><strong>GARRA Fit, the exclusive online platform for entrepreneurs in the nutritional supplement industry, is designed to meet the specific demands of those who market products consumed by fitness enthusiasts.</strong></p>
   </div>
 </details>
 
 <details>
   <summary markdown="span"><strong>&#x1f1e7;&#x1f1f7; Português</strong></summary><br />
   <div id="description" align="justify">
-    <p><strong>Ph Suplementos, a plataforma online exclusiva para empreendedores no ramo de suplementação alimentar, é projetada para atender às demandas específicas daqueles que comercializam produtos consumidos por entusiastas de academia. </strong><br>
-      <a href="https://ph-suplementos.vercel.app/" target="_blank"><strong>Clique aqui</strong></a> para conferir a versão final do projeto no seu navegador</p>
+    <p><strong>GARRA Fit, a plataforma online exclusiva para empreendedores no ramo de suplementação alimentar, é projetada para atender às demandas específicas daqueles que comercializam produtos consumidos por entusiastas de academia. </strong></p>
 
   </div>
 </details>
@@ -70,13 +68,13 @@
 ## 👨‍💻 Developers/Desenvolvedores
 
   <ul>
-    <li><a href="https://github.com/geanderson-062" rel="nofollow"><strong>Geanderson</strong></a> </li>
-    <li><a href="https://github.com/Wedgles97" rel="nofollow"><strong>Wedgles</strong></a> </li>
+    <li><strong>Geanderson</strong> </li>
+    <li><strong>Wedgles</strong> </li>
   </ul>
 </div>
 
 ## 📜 License/Licença
 
 <div id="license">
-  <p>Este repositório está sob <strong>Licença MIT</strong>. Você pode ver o arquivo <a href="https://github.com/geanderson-062/Ph-suplementos/blob/master/LICENSE" rel="nofollow"><strong>LICENSE</strong></a> para mais detalhes.</p>
+  <p>Este repositório está sob <strong>Licença MIT</strong>. Você pode ver o arquivo <a href="LICENSE" rel="nofollow"><strong>LICENSE</strong></a> para mais detalhes.</p>
 </div>
