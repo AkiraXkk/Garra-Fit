@@ -4,125 +4,194 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garra Fit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo-group" aria-label="Logo Garra Fit">
-        <svg
-          class="header__logo-icon"
-          viewBox="0 0 64 64"
-          role="img"
-          aria-label="Logo Garra Fit"
-        >
-          <circle cx="32" cy="32" r="31" fill="#f2f2f2"></circle>
-          <path
-            d="M18 52C22 34 30 18 43 6c-3 14-9 31-22 46-1 1-2 1-3 0z"
-            fill="#8dd700"
-          ></path>
-          <path
-            d="M32 58c2-18 10-36 24-50-2 18-10 35-23 50h-1z"
-            fill="#8dd700"
-          ></path>
-          <text x="32" y="33" fill="#1a202c" font-size="10" font-weight="700" text-anchor="middle">
-            <tspan x="32" dy="0">Garra</tspan>
-            <tspan x="32" dy="12">Fit</tspan>
-          </text>
-        </svg>
-        <span class="header__brand">Garra Fit</span>
+    <header class="header" aria-label="Cabeçalho principal">
+      <div class="header__top">
+        <div class="header__logo-group" aria-label="Logo Garra Fit">
+          <svg class="brand-logo" viewBox="0 0 64 64" role="img" aria-label="Logo Garra Fit">
+            <circle cx="32" cy="32" r="31" fill="#ffffff"></circle>
+            <ellipse cx="19" cy="32" rx="4.1" ry="20" transform="rotate(21 19 32)" fill="#8dd700"></ellipse>
+            <ellipse cx="32" cy="32" rx="4.1" ry="24" transform="rotate(21 32 32)" fill="#8dd700"></ellipse>
+            <ellipse cx="45" cy="32" rx="4.1" ry="20" transform="rotate(21 45 32)" fill="#8dd700"></ellipse>
+          </svg>
+          <span class="header__brand">Garra Fit</span>
+        </div>
+
+        <div class="header__actions">
+          <a class="header__action-link" href="#admin">Admin</a>
+          <button class="header__action-link header__cart-button" type="button">
+            Carrinho <span class="header__cart-count" aria-label="itens no carrinho">1</span>
+          </button>
+        </div>
       </div>
 
-      <button class="menu-button" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <nav class="header__menu" aria-label="Navegação principal">
+        <a href="#home">Home</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#dimentario">Produto dimentário</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
 
-    <section class="hero" aria-label="Destaque de entrega e desconto">
-      <div class="hero__discount">
-        <p>desconto de 10% à vista</p>
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M4 12h13m0 0-4.5-4.5M17 12l-4.5 4.5"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
+    <main class="main-content" id="home">
+      <section class="products" id="produtos" aria-label="Lista de produtos">
+        <div class="products__head">
+          <div>
+            <h1 class="main-content__title">Buenos</h1>
+            <p class="products__count">3 produtos</p>
+          </div>
+          <div class="products__filters">
+            <select aria-label="Ordenar produtos">
+              <option>Sorte do percento</option>
+              <option>Menor preço</option>
+              <option>Maior preço</option>
+            </select>
+            <label class="products__favorites">
+              <input type="checkbox" />
+              Somente favoritos
+            </label>
+          </div>
+        </div>
+
+        <div class="products__grid">
+          <article
+            class="product-card"
+            aria-label="Produto Whey Protein 900g"
+            role="button"
+            tabindex="0"
+            data-name="Whey Protein 900g"
+            data-description="Blend proteico premium para recuperação muscular e ganho de desempenho."
+            data-price="R$ 135,00 à vista"
+            data-stock="9 em estoque"
+          >
+            <div class="product-card__image-wrap">
+              <svg class="brand-logo" viewBox="0 0 64 64" role="img" aria-label="Logo Garra Fit">
+                <circle cx="32" cy="32" r="31" fill="#ffffff"></circle>
+                <ellipse cx="19" cy="32" rx="4.1" ry="20" transform="rotate(21 19 32)" fill="#8dd700"></ellipse>
+                <ellipse cx="32" cy="32" rx="4.1" ry="24" transform="rotate(21 32 32)" fill="#8dd700"></ellipse>
+                <ellipse cx="45" cy="32" rx="4.1" ry="20" transform="rotate(21 45 32)" fill="#8dd700"></ellipse>
+              </svg>
+            </div>
+            <h2 class="product-card__title">Whey Protein 900g</h2>
+            <p class="product-card__brand">9 em estoque</p>
+            <button class="product-card__buy-button" type="button">Adicionar</button>
+          </article>
+
+          <article
+            class="product-card"
+            aria-label="Produto Creatina Monohidratada"
+            role="button"
+            tabindex="0"
+            data-name="Creatina Monohidratada"
+            data-description="Creatina pura para força máxima, explosão e melhor rendimento no treino."
+            data-price="R$ 89,90 à vista"
+            data-stock="9 em estoque"
+          >
+            <div class="product-card__image-wrap">
+              <svg class="brand-logo" viewBox="0 0 64 64" role="img" aria-label="Logo Garra Fit">
+                <circle cx="32" cy="32" r="31" fill="#ffffff"></circle>
+                <ellipse cx="19" cy="32" rx="4.1" ry="20" transform="rotate(21 19 32)" fill="#8dd700"></ellipse>
+                <ellipse cx="32" cy="32" rx="4.1" ry="24" transform="rotate(21 32 32)" fill="#8dd700"></ellipse>
+                <ellipse cx="45" cy="32" rx="4.1" ry="20" transform="rotate(21 45 32)" fill="#8dd700"></ellipse>
+              </svg>
+            </div>
+            <h2 class="product-card__title">Creatina Monohidratada</h2>
+            <p class="product-card__brand">9 em estoque</p>
+            <button class="product-card__buy-button" type="button">Adicionar</button>
+          </article>
+
+          <article
+            class="product-card"
+            aria-label="Produto Pré-Treino 300g"
+            role="button"
+            tabindex="0"
+            data-name="Pré-Treino 300g"
+            data-description="Energia e foco para iniciar o treino no máximo com fórmula de alto desempenho."
+            data-price="R$ 74,90 à vista"
+            data-stock="7 em estoque"
+          >
+            <div class="product-card__image-wrap">
+              <svg class="brand-logo" viewBox="0 0 64 64" role="img" aria-label="Logo Garra Fit">
+                <circle cx="32" cy="32" r="31" fill="#ffffff"></circle>
+                <ellipse cx="19" cy="32" rx="4.1" ry="20" transform="rotate(21 19 32)" fill="#8dd700"></ellipse>
+                <ellipse cx="32" cy="32" rx="4.1" ry="24" transform="rotate(21 32 32)" fill="#8dd700"></ellipse>
+                <ellipse cx="45" cy="32" rx="4.1" ry="20" transform="rotate(21 45 32)" fill="#8dd700"></ellipse>
+              </svg>
+            </div>
+            <h2 class="product-card__title">Pré-Treino 300g</h2>
+            <p class="product-card__brand">7 em estoque</p>
+            <button class="product-card__buy-button" type="button">Adicionar</button>
+          </article>
+        </div>
+
+        <section class="product-info" aria-live="polite" aria-label="Informações do produto selecionado">
+          <h2 id="info-title">Selecione um produto</h2>
+          <p id="info-description">Clique em um card ou no botão Adicionar para ver os detalhes.</p>
+          <p id="info-price"></p>
+          <p id="info-stock"></p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer" id="contato" aria-label="Rodapé com informações de contato">
+      <div>
+        <h3>Footer</h3>
+        <p>
+          Suplementos de alta performance com atendimento rápido e foco no resultado de quem treina
+          sério.
+        </p>
+      </div>
+      <div>
+        <h3>Fale Conosco</h3>
+        <p>WhatsApp: <strong>(16) 98185-5932</strong></p>
+        <a href="https://wa.me/5516981855932" target="_blank" rel="noreferrer">Conversar Agora</a>
+      </div>
+      <div class="footer__logo-wrap" aria-hidden="true">
+        <svg class="brand-logo" viewBox="0 0 64 64">
+          <circle cx="32" cy="32" r="31" fill="#ffffff"></circle>
+          <ellipse cx="19" cy="32" rx="4.1" ry="20" transform="rotate(21 19 32)" fill="#8dd700"></ellipse>
+          <ellipse cx="32" cy="32" rx="4.1" ry="24" transform="rotate(21 32 32)" fill="#8dd700"></ellipse>
+          <ellipse cx="45" cy="32" rx="4.1" ry="20" transform="rotate(21 45 32)" fill="#8dd700"></ellipse>
         </svg>
       </div>
+    </footer>
 
-      <div class="hero__delivery">
-        <p class="hero__delivery-main">ENTREGA GRÁTIS</p>
-        <p class="hero__delivery-sub">Em Gravatá</p>
-      </div>
+    <script>
+      const cards = document.querySelectorAll(".product-card");
+      const infoTitle = document.getElementById("info-title");
+      const infoDescription = document.getElementById("info-description");
+      const infoPrice = document.getElementById("info-price");
+      const infoStock = document.getElementById("info-stock");
 
-      <svg
-        class="hero__runner"
-        viewBox="0 0 64 64"
-        role="img"
-        aria-label="Pessoa correndo"
-      >
-        <circle cx="46" cy="10" r="6" fill="#ffffff"></circle>
-        <path
-          d="M29 23l12-4 7 8M41 19l-5 11 7 6M36 30l-8 9M32 25l-10 9m12 7-8 13m17-18 10 12m-22 6h10"
-          fill="none"
-          stroke="#ffffff"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-      </svg>
-    </section>
+      const showProductInfo = (card) => {
+        infoTitle.textContent = card.dataset.name;
+        infoDescription.textContent = card.dataset.description;
+        infoPrice.textContent = `Preço: ${card.dataset.price}`;
+        infoStock.textContent = `Estoque: ${card.dataset.stock}`;
+      };
 
-    <div class="marquee" aria-label="Letreiro de anúncios">
-      <div class="marquee__track">
-        <span>Garra Fit: Elevando o seu desempenho • </span>
-        <span>Garra Fit: Elevando o seu desempenho • </span>
-        <span>Garra Fit: Elevando o seu desempenho • </span>
-      </div>
-    </div>
-
-    <main class="main-content">
-      <h1 class="main-content__title">Promoções imperdíveis</h1>
-
-      <article class="product-card" aria-label="Produto Whey Protein 900g">
-        <div class="product-card__image-wrap">
-          <img
-            src="https://github.com/user-attachments/assets/e77df1c0-444c-499e-93e8-8320e75c16a0"
-            alt="Whey Protein 900g Max Titanium"
-          />
-        </div>
-
-        <h2 class="product-card__title">Whey Protein 900g</h2>
-        <p class="product-card__brand">Max Titanium</p>
-
-        <div class="product-card__pricing">
-          <div class="price-box">
-            <p class="price-box__old">R$ 150.00</p>
-            <p class="price-box__new">R$ 135.00 à vista</p>
-          </div>
-          <p class="product-card__installments">em até 3x no cartão</p>
-        </div>
-
-        <button class="product-card__buy-button" type="button">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M3 4h2l2 10h10l2-7H7m2 12a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-          <span>Comprar</span>
-        </button>
-
-        <p class="product-card__stock">11 unidades restantes</p>
-      </article>
-    </main>
+      cards.forEach((card) => {
+        const button = card.querySelector(".product-card__buy-button");
+        card.addEventListener("click", () => showProductInfo(card));
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            showProductInfo(card);
+          }
+        });
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          showProductInfo(card);
+        });
+      });
+    </script>
   </body>
 </html>
